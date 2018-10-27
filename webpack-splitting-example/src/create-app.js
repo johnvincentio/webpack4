@@ -1,14 +1,14 @@
-import Vue from "vue"
+import Vue from 'vue';
 
 export default function createApp() {
-  const el = document.createElement("div")
+	const el = document.createElement('div');
 
-  el.setAttribute("id", "app")
+	el.setAttribute('id', 'app');
 
-  document.body.appendChild(el)
+	document.body.appendChild(el);
 
-  new Vue({
-    el: "#app",
-    render: h => h("div", "Hello world")
-  })
+	new Vue({
+		el: '#app',
+		render: h => h('div', 'Hello world')
+	});
 }
